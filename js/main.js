@@ -1,6 +1,14 @@
 const swiper = new Swiper('.cards-slider', {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    pagination: {
+        el: '.cards-slider .swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: ' .cards-slider .swiper-button-next',
+        prevEl: ' .cards-slider .swiper-button-prev',
+    },
     //   breakpoints: {
     //     // when window width is >= 320px
     //     320: {

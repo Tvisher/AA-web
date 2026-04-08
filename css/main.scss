@@ -543,23 +543,23 @@ $brand-color: #e15b00;
   border: 2px solid #e15b00;
 }
 
-.book-section {
+.author-section {
   padding: 100px 0;
 }
 
-.book-section__content {
+.author-section__content {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.book-section__top {
+.author-section__top {
   display: flex;
   gap: 20px;
 }
 
-.book-section__top-left {
+.author-section__top-left {
   flex-shrink: 0;
   width: 373px;
   min-height: 507px;
@@ -569,7 +569,7 @@ $brand-color: #e15b00;
   position: relative;
 }
 
-.book-section__top-right {
+.author-section__top-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -619,7 +619,7 @@ $brand-color: #e15b00;
   }
 }
 
-.book-section__bottom {
+.author-section__bottom {
   display: flex;
   gap: 20px;
   .bottom-card {

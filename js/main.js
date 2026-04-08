@@ -97,6 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     })
-    // Инициализируем
 
 })
+
+
+
+$('.faq-item__head').on('click', function () {
+    const $toggleItem = $(this).parent('.faq-item');
+    const $body = $toggleItem.find('.faq-item__body');
+    $body.slideToggle(300);
+    $toggleItem.toggleClass('open');
+});
+

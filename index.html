@@ -16,6 +16,7 @@
         integrity="sha512-2WP3kcyJFX2VpAZsV7UOpbLjGS62iunKpT+kgn72tzNGnP7mSGoVl1u5AWzi59xeOaY+N62Cldi4qNR1Ug1NQg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/plyr.css">
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
@@ -62,6 +63,12 @@
     </header>
     <main class="main">
         <section class="main-screen">
+            <div class="main-screen__video">
+                <video autoplay muted loop playsinline poster="./img/main-video-poster.jpg">
+                    <source src="./files/large.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает HTML5 видео.
+                </video>
+            </div>
             <div class="container">
                 <div class="main-screen__wrapper">
                     <h1>
@@ -280,7 +287,11 @@
                 </h2>
                 <div class="author-section__content">
                     <div class="author-section__top">
-                        <div class="author-section__top-left"></div>
+                        <div class="author-section__top-left">
+                            <video id="player" playsinline data-poster="./img/person-video-poster.jpg">
+                                <source src="./files/large.mp4" type="video/mp4" />
+                            </video>
+                        </div>
                         <div class="author-section__top-right">
                             <div class="top-right__block info-card">
                                 <h3>Помогаю не просто выговориться, <br>а прийти к реальным изменениям.</h3>
@@ -828,11 +839,219 @@
                 </div>
             </div>
         </section>
+        <section class="news-section">
+            <div class="container">
+                <div class="news-section__wrapper">
+                    <div class="news-section__coll">
+                        <h2 class="section-title">
+                            Популярные <br>
+                            публикации
+                        </h2>
+                        <p class="section-descr">
+                            Статьи, интервью <br> и другие материалы,<br>
+                            опубликованные о нашей <br> компании в различных СМИ
+                        </p>
+                        <a href="#" class="service-card__btn">
+                            <span>Все публикации</span>
+                            <span class="ico">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.707154 0.707031L6.70715 6.70704L0.707156 12.707" stroke="#E15B00"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news-section__coll">
+                        <a href="" class="news-block">
+                            <div class="news-block__info">
+                                <div class="news-block__title">О методе ДПДГ</div>
+                                <div class="news-block__descr">О методе: история, эффективность, безопасность метода
+                                </div>
+                                <div class="service-card__btn">
+                                    <span>Подробнее</span>
+                                    <span class="ico">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.707154 0.707031L6.70715 6.70704L0.707156 12.707"
+                                                stroke="#E15B00" stroke-width="2"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news-block__image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s"
+                                    alt="">
+                            </div>
+                        </a>
+                        <a href="" class="news-block">
+                            <div class="news-block__info">
+                                <div class="news-block__title">ДПДГ в работе <br> с психотравмой</div>
+                                <div class="news-block__descr">Что такое психотравмирующая ситуация и как метод ДПДГ
+                                    помогает эффективно с ней справиться</div>
+                                <div class="service-card__btn">
+                                    <span>Подробнее</span>
+                                    <span class="ico">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.707154 0.707031L6.70715 6.70704L0.707156 12.707"
+                                                stroke="#E15B00" stroke-width="2"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news-block__image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s"
+                                    alt="">
+                            </div>
+                        </a>
+                        <a href="" class="news-block">
+                            <div class="news-block__info">
+                                <div class="news-block__title">Тревога</div>
+                                <div class="news-block__descr">Когда тревога полезна, а когда необходимо обратиться к
+                                    специалисту</div>
+                                <div class="service-card__btn">
+                                    <span>Подробнее</span>
+                                    <span class="ico">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.707154 0.707031L6.70715 6.70704L0.707156 12.707"
+                                                stroke="#E15B00" stroke-width="2"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news-block__image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s"
+                                    alt="">
+                            </div>
+                        </a>
+                        <a href="" class="news-block">
+                            <div class="news-block__info">
+                                <div class="news-block__title">Цели и негативные установки</div>
+                                <div class="news-block__descr">Почему важно правильно ставить цели и что может мешать на
+                                    пути их достижения</div>
+                                <div class="service-card__btn">
+                                    <span>Подробнее</span>
+                                    <span class="ico">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.707154 0.707031L6.70715 6.70704L0.707156 12.707"
+                                                stroke="#E15B00" stroke-width="2"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news-block__image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s"
+                                    alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__title">Как со мной связаться?</div>
+                <div class="footer-top__wrapper">
+                    <div class="footer-top__coll">
+                        <div class="footer-top__subtitle">Запишитесь <br> на встречу знакомство</div>
+                        <a href="#" class="service-card__btn">
+                            <span>Записаться</span>
+                            <span class="ico">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.707032 0.707031L6.70703 6.70704L0.707034 12.707" stroke="white"
+                                        stroke-width="2" />
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer-top__coll">
+                        <img src="./img/footer-top-arrows.svg" alt="">
+                    </div>
+                    <div class="footer-top__coll">
+                        <div class="footer-top__subtitle">
+                            Или напишите <br> мне в соцсети
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="social" name="max">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="24" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.4076 16.7174C21.0585 16.541 18.4449 18.874 17.8685 22.5253C17.3913 25.5491 18.2375 29.2337 18.9613 29.4191C19.2683 29.4978 20.007 28.9305 20.5445 28.4218C20.6456 28.3261 20.7984 28.31 20.9169 28.3827C21.7547 28.897 22.7033 29.2835 23.7491 29.3386C27.1874 29.5196 30.2344 26.8183 30.4145 23.3664C30.5946 19.9146 27.8459 16.8984 24.4076 16.7174ZM18.7992 34.2471C18.6695 34.1549 18.4909 34.1799 18.3822 34.2963C16.9296 35.8515 13.2122 36.9424 13.0419 34.8197C13.0419 33.1567 12.6698 31.7552 12.2601 30.2122C11.7584 28.3225 11.2002 26.2203 11.2002 23.1651C11.2002 15.8795 17.1524 10.4004 24.2097 10.4004C31.267 10.4004 36.8002 16.147 36.8002 23.2358C36.8002 30.3246 31.0908 35.9297 24.2765 35.9297C21.8589 35.9297 20.6857 35.5879 18.7992 34.2471Z"
+                                        fill="#E15C02" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social" name="telegram">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24 48C37.2547 48 48 37.2547 48 24C48 10.7453 37.2547 0 24 0C10.7453 0 0 10.7453 0 24C0 37.2547 10.7453 48 24 48ZM34.549 15.3331C34.7342 13.2307 32.5138 14.0966 32.5138 14.0966C30.8746 14.7754 29.184 15.4646 27.4752 16.1616C22.176 18.323 16.7021 20.556 12.0389 22.7539C9.51024 23.6813 10.9906 24.6086 10.9906 24.6086L14.999 25.8456C16.8494 26.4024 17.8358 25.7837 17.8358 25.7837L26.4701 19.9094C29.5536 17.807 28.8134 19.5384 28.0733 20.2805L21.5981 26.4638C20.6112 27.3298 21.1046 28.0718 21.5362 28.4429C22.7602 29.5224 25.7698 31.4976 27.0835 32.3597C27.4253 32.5838 27.6523 32.7331 27.7037 32.7715C28.0118 33.0187 29.677 34.1318 30.7872 33.8846C31.8974 33.637 32.0208 32.2147 32.0208 32.2147L33.5006 22.5062C33.7224 20.821 33.9773 19.201 34.1808 17.9069C34.3728 16.6848 34.5192 15.7541 34.549 15.3331Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__wrapper">
+                    <div class="footer-bottom__coll">
+                        <div class="footer-bottom__info">ИП Андреева Александра Владимировна</div>
+                        <div class="footer-bottom__info">ОГРНИП 325774600242163</div>
+                        <div class="footer-bottom__info">© 2026</div>
+                    </div>
+                    <div class="footer-bottom__coll">
+                        <div class="header__socials">
+                            <a href="#" class="header__social" name="max">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0ZM15.1309 7C10.7202 7.00003 7.00021 10.4243 7 14.9775C7 16.8871 7.3485 18.2017 7.66211 19.3828C7.91811 20.347 8.15131 21.2226 8.15137 22.2617C8.25779 23.5884 10.5804 22.9065 11.4883 21.9346C11.5562 21.8619 11.668 21.8468 11.749 21.9043C12.9281 22.7423 13.6619 22.9561 15.1729 22.9561C19.4317 22.9559 22.9998 19.4527 23 15.0225C23 10.592 19.5417 7 15.1309 7ZM15.2549 10.9482C17.4036 11.0615 19.1212 12.9463 19.0088 15.1035C18.8962 17.2609 16.9917 18.9491 14.8428 18.8359C14.1894 18.8015 13.5967 18.5605 13.0732 18.2393C12.9992 18.1938 12.903 18.2039 12.8398 18.2637C12.5039 18.5816 12.0424 18.9359 11.8506 18.8867C11.3982 18.7706 10.8697 16.4679 11.168 14.5781C11.5282 12.296 13.1617 10.838 15.2549 10.9482Z"
+                                        fill="#E15B00"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="header__social" name="telegram">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_163_49)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15 30C23.2842 30 30 23.2842 30 15C30 6.7158 23.2842 0 15 0C6.7158 0 0 6.7158 0 15C0 23.2842 6.7158 30 15 30ZM21.5931 9.5832C21.7089 8.2692 20.3211 8.8104 20.3211 8.8104C19.2966 9.2346 18.24 9.6654 17.172 10.101C13.86 11.4519 10.4388 12.8475 7.5243 14.2212C5.9439 14.8008 6.8691 15.3804 6.8691 15.3804L9.3744 16.1535C10.5309 16.5015 11.1474 16.1148 11.1474 16.1148L16.5438 12.4434C18.471 11.1294 18.0084 12.2115 17.5458 12.6753L13.4988 16.5399C12.882 17.0811 13.1904 17.5449 13.4601 17.7768C14.2251 18.4515 16.1061 19.686 16.9272 20.2248C17.1408 20.3649 17.2827 20.4582 17.3148 20.4822C17.5074 20.6367 18.5481 21.3324 19.242 21.1779C19.9359 21.0231 20.013 20.1342 20.013 20.1342L20.9379 14.0664C21.0765 13.0131 21.2358 12.0006 21.363 11.1918C21.483 10.428 21.5745 9.8463 21.5931 9.5832Z"
+                                            fill="#E15B00"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_163_49">
+                                            <rect width="30" height="30" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__coll">
+                        <a href="#" class="footer-bottom__link">Оферта</a>
+                        <a href="#" class="footer-bottom__link">Согласие на информирование</a>
+                        <a href="#" class="footer-bottom__link">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+                <div class="footer-bottom__dev">
+                    <p>Сделано в <a href="#">code1</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/overlayscrollbars.browser.es6.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/plyr.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

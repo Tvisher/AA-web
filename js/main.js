@@ -109,3 +109,17 @@ $('.faq-item__head').on('click', function () {
     $toggleItem.toggleClass('open');
 });
 
+
+
+
+const player = new Plyr('#player', {
+    controls: ['play-large']
+});
+
+const videoWrapper = document.getElementsByClassName("plyr__video-wrapper")[0];
+videoWrapper.addEventListener("click", event => {
+    player.togglePlay();
+    event.stopPropagation(); // Necessary or the video will toggle twice => no playback
+});
+
+player.toggleControls(false);

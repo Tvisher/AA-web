@@ -1681,3 +1681,75 @@ $brand-color: #e15b00;
     }
   }
 }
+
+.article-head {
+  padding: 110px 0;
+  border-radius: 0 0 100px 100px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.article-section {
+  padding: 100px 0;
+}
+
+.article-section__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  h1 {
+    color: #2b2b2b;
+    font-family: "Unbounded";
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .article-section__descr {
+    color: #2b2b2b;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 150%; /* 39px */
+    margin-bottom: 20px;
+  }
+
+  .article-section__date {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 30px 0;
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  h2 {
+    color: #2b2b2b;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%; /* 42px */
+    margin: 30px 0;
+  }
+}
+
+.article-section__image {
+  margin-bottom: 30px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+  }
+
+  .article-section__image-descr {
+    margin-top: 10px;
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

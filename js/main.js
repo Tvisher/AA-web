@@ -117,9 +117,32 @@ const player = new Plyr('#player', {
 });
 
 const videoWrapper = document.getElementsByClassName("plyr__video-wrapper")[0];
-videoWrapper.addEventListener("click", event => {
-    player.togglePlay();
-    event.stopPropagation(); // Necessary or the video will toggle twice => no playback
-});
+if (videoWrapper) {
+    videoWrapper.addEventListener("click", event => {
+        player.togglePlay();
+        event.stopPropagation(); // Necessary or the video will toggle twice => no playback
+    });
 
-player.toggleControls(false);
+    player.toggleControls(false);
+}
+
+
+
+
+const articleSectionSlider = new Swiper('.article-section__slider', {
+    slidesPerView: 1,
+    effect: 'fade',
+    speed: 800,
+    loop: 1,
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: ' .swiper-button-next',
+        prevEl: ' .swiper-button-prev',
+    },
+});

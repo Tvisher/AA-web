@@ -1993,3 +1993,40 @@ $brand-color: #e15b00;
   display: flex;
   padding-top: 50px;
 }
+
+.error-section {
+  padding: 100px 0;
+  .back-btn__wrapper {
+    justify-content: flex-start;
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  background-image: url(../img/error-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right -21vh bottom -27vh;
+}
+
+.large-number {
+  color: #e15b00;
+  font-family: "Unbounded";
+  font-size: 278px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  span {
+    color: #fff;
+  }
+}
+
+.error-section__wrapper {
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .section-descr {
+    font-size: 18px;
+  }
+}

@@ -11,18 +11,17 @@
     <link rel="preload" href="./fonts/Inter_18pt-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/Inter_18pt-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/Unbounded-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.12.0/styles/overlayscrollbars.min.css"
-        integrity="sha512-2WP3kcyJFX2VpAZsV7UOpbLjGS62iunKpT+kgn72tzNGnP7mSGoVl1u5AWzi59xeOaY+N62Cldi4qNR1Ug1NQg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/overlayscrollbars.min.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/plyr.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header__wrapper">
                 <a href="/" class="header__logo">
@@ -71,10 +70,10 @@
             </div>
             <div class="container">
                 <div class="main-screen__wrapper">
-                    <h1>
+                    <h1 data-aos="fade-in" data-aos-delay="400">
                         Психолог <br>Александра <br>Андреева
                     </h1>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn" data-aos="fade-in" data-aos-delay="600">
                         <span>Сделать первый шаг к спокойствию</span>
                         <span class="btn-ico">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -91,13 +90,13 @@
         <section class="advantages">
             <div class="container">
                 <ul class="advantages-list">
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-up" data-aos-delay="200">
                         Гарантирую <br>результат
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-up" data-aos-delay="600">
                         Решаю проблему <br>за 4-6 встреч
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-up" data-aos-delay="1000">
                         Эффективные <br>методы, проверенные <br> практикой
                     </li>
                 </ul>
@@ -105,14 +104,15 @@
         </section>
         <section class="help-with">
             <div class="container">
-                <h2 class="section-title">С чем я могу помочь?</h2>
-                <span class="section-descr">Помогу решить проблему за 4-6 консультаций</span>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">С чем я могу помочь?</h2>
+                <span class="section-descr" data-aos="fade-up" data-aos-delay="400">Помогу решить проблему за 4-6
+                    консультаций</span>
                 <div class="cards-slider swiper">
-                    <div class="help-with__image">
+                    <div class="help-with__image" data-aos="fade-in" data-aos-delay="100">
                         <img src="./img/help-with-image.png" alt="">
                     </div>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide cards-slide">
+                        <div class="swiper-slide cards-slide" data-aos="zoom-in" data-aos-delay="200">
                             <h4 class="cards-slide__title">Тревоги и страхи</h4>
                             <ul class="cards-slide__list">
                                 <li class="list-item">Испытываете постоянное напряжение, мысли крутятся?</li>
@@ -142,7 +142,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="swiper-slide cards-slide">
+                        <div class="swiper-slide cards-slide" data-aos="zoom-in" data-aos-delay="400">
                             <h4 class="cards-slide__title">Тревоги и страхи</h4>
                             <ul class="cards-slide__list">
                                 <li class="list-item">Испытываете постоянное напряжение, мысли крутятся?</li>
@@ -172,7 +172,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="swiper-slide cards-slide">
+                        <div class="swiper-slide cards-slide" data-aos="zoom-in" data-aos-delay="600">
                             <h4 class="cards-slide__title">Тревоги и страхи</h4>
                             <ul class="cards-slide__list">
                                 <li class="list-item">Испытываете постоянное напряжение, мысли крутятся?</li>
@@ -202,8 +202,6 @@
                                 </span>
                             </a>
                         </div>
-
-
                     </div>
                     <div class="cards-nav">
                         <div class="swiper-button-prev"></div>
@@ -216,9 +214,9 @@
         </section>
         <section class="services">
             <div class="container">
-                <h2 class="section-title">С Чего начать?</h2>
+                <h2 class="section-title" data-aos="fade-left" data-aos-delay="200">С Чего начать?</h2>
                 <div class="services__blocks">
-                    <div class="service">
+                    <div class="service" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service__head">
                             <div class="service__content">
                                 <h4>Знакомство</h4>
@@ -247,7 +245,7 @@
                         </a>
                     </div>
 
-                    <div class="service sale-service">
+                    <div class="service sale-service" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service__head">
                             <div class="service__content">
                                 <h4>Установочная встреча <br> «Личный разбор»</h4>
@@ -281,25 +279,25 @@
         </section>
         <section class="author-section">
             <div class="container">
-                <h2 class="section-title">
+                <h2 class="section-title" data-aos="fade-left" data-aos-delay="200">
                     Александра Андреева <br>
                     <span>— краткосрочный психолог</span>
                 </h2>
                 <div class="author-section__content">
                     <div class="author-section__top">
-                        <div class="author-section__top-left">
+                        <div class="author-section__top-left" data-aos="zoom-in" data-aos-delay="200">
                             <video id="player" playsinline data-poster="./img/person-video-poster.jpg">
                                 <source src="./files/large.mp4" type="video/mp4" />
                             </video>
                         </div>
                         <div class="author-section__top-right">
-                            <div class="top-right__block info-card">
+                            <div class="top-right__block info-card" data-aos="zoom-in" data-aos-delay="200">
                                 <h3>Помогаю не просто выговориться, <br>а прийти к реальным изменениям.</h3>
                                 <p>Работаю с теми, кто хочет не затягивать процесс, а
                                     понять, что мешает справиться с ситуацией, увидеть выход и прийти к устойчивому
                                     результату.</p>
                             </div>
-                            <div class="top-right__block book-card">
+                            <div class="top-right__block book-card" data-aos="zoom-in" data-aos-delay="200">
                                 <h3>Автор книги</h3>
                                 <p>Как пережить измену?<br> Книга-инструкция для женщин</p>
                                 <div class="book-image">
@@ -309,11 +307,11 @@
                         </div>
                     </div>
                     <div class="author-section__bottom">
-                        <div class="bottom-card">
+                        <div class="bottom-card" data-aos="zoom-in" data-aos-delay="200">
                             <div class="large-num">22 года</div>
                             <div class="descr">Опыт в психологии с 2004 года</div>
                         </div>
-                        <div class="bottom-card">
+                        <div class="bottom-card" data-aos="zoom-in" data-aos-delay="200">
                             <div class="large-num">700+</div>
                             <div class="descr">Клиентов</div>
                         </div>
@@ -325,10 +323,10 @@
             <div class="container">
                 <div class="how-it-work__wrapper">
                     <div class="coll">
-                        <h2 class="section-title">
+                        <h2 class="section-title" data-aos="fade-down" data-aos-delay="200">
                             Как <br> я работаю?
                         </h2>
-                        <div class="coll-block">
+                        <div class="coll-block" data-aos="fade-up" data-aos-delay="200">
                             <div class="coll-block__image">
                                 <img src="./img/coll-image-1.png" alt="">
                             </div>
@@ -344,7 +342,7 @@
                         </div>
                     </div>
                     <div class="coll">
-                        <div class="coll-block">
+                        <div class="coll-block" data-aos="fade-down" data-aos-delay="200">
                             <div class="coll-block__image">
                                 <img src="./img/coll-image-2.png" alt="">
                             </div>
@@ -357,7 +355,7 @@
                         </div>
                     </div>
                     <div class="coll">
-                        <div class="coll-block">
+                        <div class="coll-block" data-aos="fade-down" data-aos-delay="200">
                             <div class="coll-block__image">
                                 <img src="./img/coll-image-3.png" alt="">
                             </div>
@@ -368,11 +366,17 @@
                             </div>
                         </div>
 
-                        <div class="coll-block coll-block__action">
+                        <div class="coll-block coll-block__action" data-aos="fade-up" data-aos-delay="200">
                             <h4>Запишитесь <br> на бесплатную встречу</h4>
                             <div class="action__footer">
                                 <div class="num">0 ₽</div>
-                                <a href="#" class="action__btn"></a>
+                                <a href="#" class="action__btn">
+                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.707032 0.707031L6.70703 6.70704L0.707034 12.707" stroke="white"
+                                            stroke-width="2"></path>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -381,9 +385,10 @@
         </section>
         <section class="reviews">
             <div class="container">
-                <h2 class="section-title">Отзывы людей, которым я помогла</h2>
-                <span class="section-descr">Все отзывы анонимные и публикуются с согласия клиента, имена изменены</span>
-                <div class="reviews__content">
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Отзывы людей, которым я помогла</h2>
+                <span class="section-descr" data-aos="fade-up" data-aos-delay="200">Все отзывы анонимные и публикуются
+                    с согласия клиента, имена изменены</span>
+                <div class="reviews__content" data-aos="zoom-in" data-aos-delay="300">
                     <div class="reviews-main-slider swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide review-slide">
@@ -401,7 +406,8 @@
                                         стеснение.
                                     </div>
                                 </div>
-                                <div class="review-slide__footer">
+                                <div class="review-slide__footer" data-fancybox="reviews"
+                                    data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s">
                                     <span>Оригинальный отзыв</span>
                                     <span class="ico">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -430,7 +436,8 @@
                                         стеснение.
                                     </div>
                                 </div>
-                                <div class="review-slide__footer">
+                                <div class="review-slide__footer" data-fancybox="reviews"
+                                    data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s">
                                     <span>Оригинальный отзыв</span>
                                     <span class="ico">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -454,7 +461,8 @@
                                         раздражительность, срывы злост
                                     </div>
                                 </div>
-                                <div class="review-slide__footer">
+                                <div class="review-slide__footer" data-fancybox="reviews"
+                                    data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOPyYzOK0R-J-5VFnGXdGnTLCG3QXGfSw-w&s">
                                     <span>Оригинальный отзыв</span>
                                     <span class="ico">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -539,17 +547,16 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
         <section class="prices">
             <div class="container">
-                <h2 class="section-title">Услуги и цены</h2>
+                <h2 class="section-title" data-aos="fade-left" data-aos-delay="300">Услуги и цены</h2>
                 <div class="service-cards">
                     <div class="service-cards__top">
                         <div class="service-cards__coll">
-                            <div class="service-card orange-card">
+                            <div class="service-card orange-card" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="service-card__name">Установочная <br>встреча <br>«Личный разбор»</div>
                                 <div class="service-card__descr">Разберем вашу ситуацию и получите пошаговый план
                                     решения вашей проблемы.Разберем вашу ситуацию и получите пошаговый план решения
@@ -576,7 +583,7 @@
                             </div>
                         </div>
                         <div class="service-cards__coll">
-                            <div class="service-card">
+                            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="service-card__name">Знакомство</div>
                                 <div class="service-card__descr">Сможете рассказать о вашей проблеме, познакомиться со
                                     мной, моими методами и узнать, как я могу вам помочь.</div>
@@ -598,7 +605,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="service-card">
+                            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="service-card__name">Консультация</div>
                                 <div class="service-card__descr">Разовая индивидуальная онлайн-консультация</div>
                                 <div class="service-card__footer">
@@ -623,7 +630,7 @@
                         </div>
                     </div>
                     <div class="service-cards__bottom">
-                        <div class="service-card">
+                        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
                             <div class="service-card__name">Пакет из 4-х консультаций с гарантией результата!</div>
                             <div class="service-card__descr">4 индивидуальных консультаций. Покупая пакет, вы получаете
                                 гарантию результата</div>
@@ -646,7 +653,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-card">
+                        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
                             <div class="service-card__name">Парная <br> консультация</div>
                             <div class="service-card__descr">Консультация когда во встрече принимают участие оба
                                 партнера</div>
@@ -668,7 +675,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-card">
+                        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
                             <div class="service-card__name">Консультация</div>
                             <div class="service-card__descr">Разовая индивидуальная онлайн-консультация</div>
                             <div class="service-card__footer">
@@ -691,7 +698,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prices-descr">
+                <div class="prices-descr" data-aos="fade-in" data-aos-delay="500">
                     *Скидка действует до 28 февраля 2026 года
                 </div>
             </div>
@@ -699,7 +706,7 @@
         <section class="book-section">
             <div class="container">
                 <div class="book-section__wrapper">
-                    <div class="book-section__coll">
+                    <div class="book-section__coll" data-aos="fade-up" data-aos-delay="100">
                         <h2 class="book-section__title">Как <br> пережить<br> измену?</h2>
                         <p class="section-descr">
                             Книга-инструкция<br> для женщин
@@ -716,10 +723,10 @@
                             </span>
                         </a>
                     </div>
-                    <div class="book-section__coll">
+                    <div class="book-section__coll" data-aos="zoom-in" data-aos-delay="200">
                         <img src="./img/book-section-book.png" alt="">
                     </div>
-                    <div class="book-section__coll">
+                    <div class="book-section__coll" data-aos="fade-right" data-aos-delay="300">
                         <a href="#" class="btn">
                             <span>Купить</span>
                             <span class="btn-ico">
@@ -737,9 +744,9 @@
         </section>
         <section class="faq">
             <div class="container">
-                <h2 class="section-title">FAQ Частые вопросы</h2>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">FAQ Частые вопросы</h2>
                 <div class="faq__list">
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="faq-item__head">
                             <h4 class="faq-item__name">Как часто нужно встречаться?</h4>
                             <div class="faq-item__ico"></div>
@@ -758,7 +765,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="faq-item__head">
                             <h4 class="faq-item__name">Как строится работа?</h4>
                             <div class="faq-item__ico"></div>
@@ -777,7 +784,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="faq-item__head">
                             <h4 class="faq-item__name">Как проходит онлайн-консультация?</h4>
                             <div class="faq-item__ico"></div>
@@ -796,8 +803,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="faq-item__head">
                             <h4 class="faq-item__name">Будет ли онлайн-консультация такая <br> же эффективная, как и
                                 личная встреча?</h4>
@@ -817,7 +823,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="faq-item__head">
                             <h4 class="faq-item__name">Почему лучше обратиться к Вам?</h4>
                             <div class="faq-item__ico"></div>
@@ -842,7 +848,7 @@
         <section class="news-section">
             <div class="container">
                 <div class="news-section__wrapper">
-                    <div class="news-section__coll">
+                    <div class="news-section__coll" data-aos="fade-down" data-aos-delay="100">
                         <h2 class="section-title">
                             Популярные <br>
                             публикации
@@ -863,7 +869,7 @@
                         </a>
                     </div>
                     <div class="news-section__coll">
-                        <a href="" class="news-block">
+                        <a href="" class="news-block" data-aos="fade-up" data-aos-delay="100">
                             <div class="news-block__info">
                                 <div class="news-block__title">О методе ДПДГ</div>
                                 <div class="news-block__descr">О методе: история, эффективность, безопасность метода
@@ -884,7 +890,7 @@
                                     alt="">
                             </div>
                         </a>
-                        <a href="" class="news-block">
+                        <a href="" class="news-block" data-aos="fade-up" data-aos-delay="100">
                             <div class="news-block__info">
                                 <div class="news-block__title">ДПДГ в работе <br> с психотравмой</div>
                                 <div class="news-block__descr">Что такое психотравмирующая ситуация и как метод ДПДГ
@@ -905,7 +911,7 @@
                                     alt="">
                             </div>
                         </a>
-                        <a href="" class="news-block">
+                        <a href="" class="news-block" data-aos="fade-up" data-aos-delay="100">
                             <div class="news-block__info">
                                 <div class="news-block__title">Тревога</div>
                                 <div class="news-block__descr">Когда тревога полезна, а когда необходимо обратиться к
@@ -926,7 +932,7 @@
                                     alt="">
                             </div>
                         </a>
-                        <a href="" class="news-block">
+                        <a href="" class="news-block" data-aos="fade-up" data-aos-delay="100">
                             <div class="news-block__info">
                                 <div class="news-block__title">Цели и негативные установки</div>
                                 <div class="news-block__descr">Почему важно правильно ставить цели и что может мешать на
@@ -955,9 +961,9 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="footer-top__title">Как со мной связаться?</div>
+                <div class="footer-top__title" data-aos="fade-in" data-aos-delay="100">Как со мной связаться?</div>
                 <div class="footer-top__wrapper">
-                    <div class="footer-top__coll">
+                    <div class="footer-top__coll" data-aos="fade-right" data-aos-delay="100">
                         <div class="footer-top__subtitle">Запишитесь <br> на встречу знакомство</div>
                         <a href="#" class="service-card__btn">
                             <span>Записаться</span>
@@ -971,10 +977,10 @@
                             </span>
                         </a>
                     </div>
-                    <div class="footer-top__coll">
+                    <div class="footer-top__coll" data-aos="zoom-in" data-aos-delay="100">
                         <img src="./img/footer-top-arrows.svg" alt="">
                     </div>
-                    <div class="footer-top__coll">
+                    <div class="footer-top__coll" data-aos="fade-left" data-aos-delay="100">
                         <div class="footer-top__subtitle">
                             Или напишите <br> мне в соцсети
                         </div>
@@ -1003,7 +1009,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="footer-bottom__wrapper">
+                <div class="footer-bottom__wrapper" data-aos="fade-in" data-aos-delay="100">
                     <div class="footer-bottom__coll">
                         <div class="footer-bottom__info">ИП Андреева Александра Владимировна</div>
                         <div class="footer-bottom__info">ОГРНИП 325774600242163</div>
@@ -1051,7 +1057,9 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/overlayscrollbars.browser.es6.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/plyr.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

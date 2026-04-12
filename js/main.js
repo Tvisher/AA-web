@@ -169,3 +169,15 @@ AOS.init({
 
 
 Fancybox.bind("[data-fancybox]", {});
+
+
+const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    const mobileBtn = target.closest('.mobile-menu__btn');
+    if (mobileBtn) {
+        mobileMenu.classList.toggle('show');
+        mobileBtn.classList.toggle('show');
+        document.body.classList.toggle('hidden')
+    }
+})

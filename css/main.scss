@@ -2405,6 +2405,12 @@ $brand-color: #e15b00;
 }
 
 @media (max-width: 768px) {
+  .faq-item__body {
+    padding-right: 0px;
+  }
+  .faq-item__body-inner::before {
+    width: 100%;
+  }
   .help-with__image {
     display: none;
   }

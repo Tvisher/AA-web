@@ -2170,6 +2170,18 @@ $brand-color: #e15b00;
   }
 }
 
+@media (max-width: 1600px) {
+  .services {
+    background-position: right -10vw top;
+  }
+}
+
+@media (max-width: 1440px) {
+  .services {
+    background-position: right -20vw top;
+  }
+}
+
 @media (max-width: 1280px) {
   html {
     font-size: 14px;
